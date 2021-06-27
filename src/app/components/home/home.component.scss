@@ -1,0 +1,33 @@
+.wrapper {
+  background-color: pink;
+  height: 100%;
+}
+
+.main-content {
+  margin: auto;
+  padding-top: 1em;
+  width: 80%;
+}
+
+.table-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter {
+  width: 20%;
+}
+
+.add-btn {
+  margin: auto 0;
+}
+
+.main-table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}

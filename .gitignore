@@ -1,0 +1,6 @@
+# IDEA
+.vs
+
+# JS
+node_modules
+dist
