@@ -1,1 +1,17 @@
-<p>authentication works!</p>
+<form [formGroup]="authForm" class="auth-form" novalidate>
+  <mat-form-field class="auth-field">
+    <input matInput type="text" placeholder="Login" formControlName="login" class="auth-input" />
+    <mat-error *ngIf="login.hasError('required')">
+      Login is required!
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="auth-field">
+    <input matInput type="password" placeholder="Password" formControlName="password" class="auth-input" />
+    <mat-error *ngIf="password.hasError('required')">
+      Password is required!
+    </mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="accent" (click)="authorizeUser()" class="login-btn">Login</button>
+</form>

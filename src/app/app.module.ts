@@ -6,22 +6,24 @@ import { AppComponent } from './app.component';
 
 import { HomeModule } from './components/home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AuthenticationComponent } from './components/authentication/authentication.component';
-import { RegistrationComponent } from './components/registration/registration.component';
 import { NewTravelComponent } from './components/new-travel/new-travel.component';
+import { AuthenticationModule } from './components/authentication/authentication.module';
+import { DialogModule } from './components/dialog/dialog.module';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthenticationComponent,
-    RegistrationComponent,
-    NewTravelComponent
+    NewTravelComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HomeModule
+    HomeModule,
+    AuthenticationModule,
+    DialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

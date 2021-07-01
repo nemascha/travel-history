@@ -1,6 +1,9 @@
 .wrapper {
-  background-color: pink;
   height: 100%;
+}
+
+.add-btn {
+  height: 50%;
 }
 
 .main-content {
@@ -12,15 +15,11 @@
 .table-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-
-.filter {
-  width: 20%;
+  justify-content: flex-end;
 }
 
 .add-btn {
-  margin: auto 0;
+  margin: 2% 0;
 }
 
 .main-table {
@@ -30,4 +29,16 @@
 .mat-form-field {
   font-size: 14px;
   width: 100%;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: inherit;
+  align-items: center;
+}
+
+.action-icon {
+  cursor: pointer;
 }

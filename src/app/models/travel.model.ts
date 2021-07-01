@@ -1,8 +1,8 @@
 export interface Travel {
-  id?: number;
+  id: number;
   country: string;
   city: string;
-  weather: string;
+  temp?: string;
   year: string;
   notes?: string;
 }
